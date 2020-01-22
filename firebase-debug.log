@@ -1,0 +1,1647 @@
+[debug] [2020-01-22T03:42:50.165Z] ----------------------------------------------------------------------
+[debug] [2020-01-22T03:42:50.171Z] Command:       /home/miftahun/.nvm/versions/node/v13.1.0/bin/node /home/miftahun/.nvm/versions/node/v13.1.0/bin/firebase serve --only functions
+[debug] [2020-01-22T03:42:50.171Z] CLI Version:   7.12.1
+[debug] [2020-01-22T03:42:50.171Z] Platform:      linux
+[debug] [2020-01-22T03:42:50.171Z] Node Version:  v13.1.0
+[debug] [2020-01-22T03:42:50.240Z] Time:          Wed Jan 22 2020 10:42:50 GMT+0700 (Western Indonesia Time)
+[debug] [2020-01-22T03:42:50.241Z] ----------------------------------------------------------------------
+[debug] [2020-01-22T03:42:50.241Z] 
+[debug] [2020-01-22T03:42:50.266Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-22T03:42:50.267Z] > authorizing via signed-in user
+[debug] [2020-01-22T03:42:50.267Z] [iam] checking project newagent-vlmgvi for permissions ["firebase.projects.get"]
+[debug] [2020-01-22T03:42:50.270Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-22T03:42:50.271Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-22T03:42:50.564Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-22T03:42:50.590Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/newagent-vlmgvi:testIamPermissions  
+
+[debug] [2020-01-22T03:42:51.910Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-22T03:42:51.914Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/newagent-vlmgvi  
+ 
+[debug] [2020-01-22T03:42:52.395Z] <<< HTTP RESPONSE 200
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "13"
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/home/miftahun/server/ira/functions" for Cloud Functions...
+[debug] [2020-01-22T03:42:52.718Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-22T03:42:52.718Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-22T03:42:52.719Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-22T03:42:52.721Z] [worker-~diagnostic~-0096b2b2-4c41-44af-ade3-03ed5f9b8be5]: Assigning socketPath: /tmp/fire_emu_26261.sock
+[debug] [2020-01-22T03:42:52.722Z] [worker-~diagnostic~-0096b2b2-4c41-44af-ade3-03ed5f9b8be5]: BUSY
+[debug] [2020-01-22T03:42:53.238Z] [runtime-status] [26261] Functions runtime initialized. {"cwd":"/home/miftahun/server/ira/functions","node_version":"13.1.0"}
+[debug] [2020-01-22T03:42:53.240Z] [runtime-status] [26261] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-22T03:42:53.260Z] [runtime-status] [26261] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-22T03:42:53.266Z] [runtime-status] [26261] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-22T03:42:53.267Z] [runtime-status] [26261] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[dialogflowGateway]: http function initialized (http://localhost:5000/newagent-vlmgvi/us-central1/dialogflowGateway).
+[info] ✔  functions[dialogflowWebhook]: http function initialized (http://localhost:5000/newagent-vlmgvi/us-central1/dialogflowWebhook).
+[debug] [2020-01-22T03:42:56.035Z] [worker-~diagnostic~-0096b2b2-4c41-44af-ade3-03ed5f9b8be5]: IDLE
+[debug] [2020-01-22T03:48:11.568Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T03:48:11.569Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T03:48:11.570Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T03:48:11.580Z] [worker-pool] addWorker(dialogflowGateway)
+[debug] [2020-01-22T03:48:11.580Z] [worker-pool] Adding worker with key dialogflowGateway, total=1
+[debug] [2020-01-22T03:48:11.581Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T03:48:11.581Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T03:48:11.581Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T03:48:11.944Z] [runtime-status] [26611] Functions runtime initialized. {"cwd":"/home/miftahun/server/ira/functions","node_version":"13.1.0"}
+[debug] [2020-01-22T03:48:11.947Z] [runtime-status] [26611] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-22T03:48:11.950Z] [runtime-status] [26611] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-22T03:48:11.951Z] [runtime-status] [26611] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-22T03:48:11.953Z] [runtime-status] [26611] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-22T03:48:12.996Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T03:48:12.997Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T03:48:12.997Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T03:48:13.004Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T03:48:13.012Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T03:48:13.025Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T03:48:13.035Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T03:48:13.037Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T03:48:13.038Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T03:48:13.042Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T03:48:13.042Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T03:48:13.043Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T03:48:13.043Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T03:48:13.044Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T03:48:13.044Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T03:48:13.049Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T03:48:13.050Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T03:48:13.050Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T03:48:13.051Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T03:48:13.052Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T03:48:13.082Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T03:48:13.508Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~2s
+[debug] [2020-01-22T03:48:15.063Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T03:48:15.063Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T03:48:47.638Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T03:48:47.638Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T03:48:47.638Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T03:48:47.639Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T03:48:47.639Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T03:48:47.640Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T03:48:47.645Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T03:48:47.646Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T03:48:47.646Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T03:48:47.646Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T03:48:47.648Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T03:48:47.655Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T03:48:47.657Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T03:48:47.665Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T03:48:47.665Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T03:48:47.669Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T03:48:47.669Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T03:48:47.670Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T03:48:47.670Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T03:48:47.670Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T03:48:47.671Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T03:48:47.674Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T03:48:47.675Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T03:48:47.675Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T03:48:47.675Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T03:48:47.677Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T03:48:47.684Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T03:48:47.969Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~4s
+[debug] [2020-01-22T03:48:52.247Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T03:48:52.247Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T03:48:54.302Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T03:48:54.303Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T03:48:54.303Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T03:48:54.304Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T03:48:54.304Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T03:48:54.304Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T03:48:54.306Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T03:48:54.307Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T03:48:54.307Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T03:48:54.309Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T03:48:54.312Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T03:48:54.319Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T03:48:54.320Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T03:48:54.322Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T03:48:54.323Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T03:48:54.332Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T03:48:54.333Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T03:48:54.333Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T03:48:54.333Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T03:48:54.333Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T03:48:54.334Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T03:48:54.340Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T03:48:54.340Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T03:48:54.340Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T03:48:54.341Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T03:48:54.342Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T03:48:54.350Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T03:48:54.590Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T03:48:56.121Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T03:48:56.121Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T04:10:47.462Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T04:10:47.462Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T04:10:47.462Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T04:10:47.463Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T04:10:47.463Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:10:47.463Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T04:10:47.465Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T04:10:47.466Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T04:10:47.467Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T04:10:47.470Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:10:47.472Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T04:10:47.481Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T04:10:47.483Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T04:10:47.484Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T04:10:47.485Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T04:10:47.549Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T04:10:47.550Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T04:10:47.550Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T04:10:47.551Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T04:10:47.551Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:10:47.551Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T04:10:47.552Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T04:10:47.553Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T04:10:47.554Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T04:10:47.554Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:10:47.555Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T04:10:47.563Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T04:10:47.800Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T04:10:48.796Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T04:10:48.797Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T04:12:02.642Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T04:12:02.643Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T04:12:02.643Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T04:12:02.643Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T04:12:02.643Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:12:02.644Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T04:12:02.647Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T04:12:02.647Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T04:12:02.648Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T04:12:02.648Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:12:02.649Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T04:12:02.656Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T04:12:02.656Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T04:12:02.663Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T04:12:02.663Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T04:12:02.689Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T04:12:02.689Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T04:12:02.689Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T04:12:02.689Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T04:12:02.690Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:12:02.690Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T04:12:02.690Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T04:12:02.691Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T04:12:02.691Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T04:12:02.692Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:12:02.693Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T04:12:02.706Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T04:12:02.903Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~3s
+[debug] [2020-01-22T04:12:05.758Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T04:12:05.758Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T04:15:40.842Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T04:15:40.843Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T04:15:40.843Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T04:15:40.843Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T04:15:40.843Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:15:40.844Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T04:15:40.848Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T04:15:40.851Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T04:15:40.851Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T04:15:40.852Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:15:40.853Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T04:15:40.866Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T04:15:40.866Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T04:15:40.867Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T04:15:40.868Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T04:15:40.908Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T04:15:40.909Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T04:15:40.909Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T04:15:40.909Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T04:15:40.909Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:15:40.910Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T04:15:40.910Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T04:15:40.911Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T04:15:40.912Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T04:15:40.912Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:15:40.914Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T04:15:40.919Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T04:15:41.128Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~6s
+[debug] [2020-01-22T04:15:46.964Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T04:15:46.965Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T04:17:38.853Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T04:17:38.853Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T04:17:38.854Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T04:17:38.854Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T04:17:38.854Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:17:38.855Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T04:17:38.856Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T04:17:38.857Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T04:17:38.857Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T04:17:38.864Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:17:38.866Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T04:17:38.875Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T04:17:38.875Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T04:17:38.878Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T04:17:38.878Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T04:17:38.896Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T04:17:38.897Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T04:17:38.897Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T04:17:38.897Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T04:17:38.898Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:17:38.898Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T04:17:38.900Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T04:17:38.901Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T04:17:38.901Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T04:17:38.901Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:17:38.903Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T04:17:38.911Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T04:17:39.107Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T04:17:40.847Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T04:17:40.848Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T04:26:59.259Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T04:26:59.259Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T04:26:59.260Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T04:26:59.260Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T04:26:59.260Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:26:59.260Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T04:26:59.265Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T04:26:59.266Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T04:26:59.267Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T04:26:59.267Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:26:59.269Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T04:26:59.276Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T04:26:59.280Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T04:26:59.282Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T04:26:59.282Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T04:26:59.310Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T04:26:59.311Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T04:26:59.311Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T04:26:59.312Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T04:26:59.314Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:26:59.314Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T04:26:59.315Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T04:26:59.315Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T04:26:59.316Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T04:26:59.316Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:26:59.319Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T04:26:59.331Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T04:26:59.541Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T04:27:01.021Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T04:27:01.021Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T04:27:37.941Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T04:27:37.941Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T04:27:37.941Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T04:27:37.941Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T04:27:37.942Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:27:37.942Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T04:27:37.943Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T04:27:37.944Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T04:27:37.944Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T04:27:37.945Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:27:37.947Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T04:27:37.951Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T04:27:37.953Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T04:27:37.953Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T04:27:37.954Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T04:27:37.987Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T04:27:37.988Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T04:27:37.988Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T04:27:37.988Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T04:27:37.988Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:27:37.988Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T04:27:37.989Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T04:27:37.990Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T04:27:37.990Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T04:27:37.991Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:27:37.992Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T04:27:38.000Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T04:27:38.194Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T04:27:39.049Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T04:27:39.049Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T04:27:42.814Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T04:27:42.814Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T04:27:42.814Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T04:27:42.815Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T04:27:42.815Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:27:42.815Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T04:27:42.818Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T04:27:42.820Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T04:27:42.820Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T04:27:42.820Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:27:42.821Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T04:27:42.829Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T04:27:43.013Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T04:27:44.189Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T04:27:44.190Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T04:34:01.218Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T04:34:01.219Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T04:34:01.219Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T04:34:01.219Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T04:34:01.219Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:34:01.220Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T04:34:01.225Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T04:34:01.226Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T04:34:01.226Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T04:34:01.226Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:34:01.230Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T04:34:01.237Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T04:34:01.239Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T04:34:01.242Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T04:34:01.242Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T04:34:01.269Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T04:34:01.269Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T04:34:01.269Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T04:34:01.269Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T04:34:01.270Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:34:01.270Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T04:34:01.273Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T04:34:01.274Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T04:34:01.274Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T04:34:01.274Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:34:01.275Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T04:34:01.283Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T04:34:01.502Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~9s
+[debug] [2020-01-22T04:34:10.931Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T04:34:10.931Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T04:34:20.934Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T04:34:20.935Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T04:34:20.935Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T04:34:20.935Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T04:34:20.935Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:34:20.936Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T04:34:20.938Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T04:34:20.939Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T04:34:20.940Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T04:34:20.942Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:34:20.943Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T04:34:20.950Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T04:34:20.951Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T04:34:20.952Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T04:34:20.952Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T04:34:20.962Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T04:34:20.962Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T04:34:20.963Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T04:34:20.963Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T04:34:20.963Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:34:20.963Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T04:34:20.964Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T04:34:20.964Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T04:34:20.965Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T04:34:20.966Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:34:20.968Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T04:34:20.973Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T04:34:21.170Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T04:34:22.004Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T04:34:22.004Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T04:34:25.112Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T04:34:25.113Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T04:34:25.113Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T04:34:25.114Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T04:34:25.114Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:34:25.114Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T04:34:25.115Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T04:34:25.116Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T04:34:25.117Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T04:34:25.118Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:34:25.120Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T04:34:25.129Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T04:34:25.316Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T04:34:27.004Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T04:34:27.005Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T04:34:40.252Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T04:34:40.252Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T04:34:40.253Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T04:34:40.253Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T04:34:40.253Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:34:40.254Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T04:34:40.255Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T04:34:40.256Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T04:34:40.256Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T04:34:40.267Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:34:40.268Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T04:34:40.274Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T04:34:40.276Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T04:34:40.279Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T04:34:40.279Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T04:34:40.292Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T04:34:40.293Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T04:34:40.293Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T04:34:40.293Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T04:34:40.293Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:34:40.293Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T04:34:40.296Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T04:34:40.296Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T04:34:40.296Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T04:34:40.297Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T04:34:40.298Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T04:34:40.311Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T04:34:40.510Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T04:34:41.768Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T04:34:41.768Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T05:31:53.805Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T05:31:53.805Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T05:31:53.806Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T05:31:53.806Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T05:31:53.806Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T05:31:53.807Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T05:31:53.808Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T05:31:53.809Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T05:31:53.810Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T05:31:53.812Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T05:31:53.813Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T05:31:53.820Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T05:31:53.820Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T05:31:53.829Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T05:31:53.829Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T05:31:53.846Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T05:31:53.847Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T05:31:53.847Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T05:31:53.847Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T05:31:53.847Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T05:31:53.847Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T05:31:53.851Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T05:31:53.852Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T05:31:53.852Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T05:31:53.852Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T05:31:53.853Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T05:31:53.863Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T05:31:54.063Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T05:31:55.120Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T05:31:55.120Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T05:31:57.793Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T05:31:57.793Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T05:31:57.793Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T05:31:57.794Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T05:31:57.794Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T05:31:57.794Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T05:31:57.795Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T05:31:57.797Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T05:31:57.797Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T05:31:57.798Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T05:31:57.799Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T05:31:57.805Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T05:31:57.996Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~6s
+[debug] [2020-01-22T05:32:04.275Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T05:32:04.276Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:06:32.330Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:06:32.330Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:06:32.330Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:06:32.331Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:06:32.331Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:06:32.331Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:06:32.332Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:06:32.334Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:06:32.334Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:06:32.335Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:06:32.337Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:06:32.343Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T06:06:32.343Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:06:32.350Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:06:32.350Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:06:32.385Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:06:32.386Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:06:32.386Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:06:32.386Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:06:32.386Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:06:32.386Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:06:32.388Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:06:32.389Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:06:32.389Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:06:32.389Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:06:32.390Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:06:32.395Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T06:06:32.603Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~2s
+[debug] [2020-01-22T06:06:35.030Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:06:35.030Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:07:07.110Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:07:07.110Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:07:07.110Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:07:07.111Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:07:07.111Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:07:07.111Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:07:07.112Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:07:07.113Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:07:07.113Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:07:07.113Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:07:07.115Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:07:07.122Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T06:07:07.123Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:07:07.126Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:07:07.126Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:07:07.150Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:07:07.151Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:07:07.151Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:07:07.151Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:07:07.151Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:07:07.151Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:07:07.155Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:07:07.155Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:07:07.156Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:07:07.156Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:07:07.157Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:07:07.165Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T06:07:07.339Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~2s
+[debug] [2020-01-22T06:07:09.200Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:07:09.200Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:07:43.114Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:07:43.114Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:07:43.115Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:07:43.115Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:07:43.115Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:07:43.115Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:07:43.117Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:07:43.119Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:07:43.121Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:07:43.122Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:07:43.123Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:07:43.128Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T06:07:43.130Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:07:43.132Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:07:43.132Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:07:43.164Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:07:43.164Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:07:43.164Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:07:43.164Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:07:43.165Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:07:43.165Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:07:43.165Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:07:43.167Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:07:43.169Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:07:43.170Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:07:43.171Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:07:43.183Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T06:07:43.360Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:07:45.091Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:07:45.092Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:13:08.153Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:13:08.155Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:13:08.155Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:13:08.155Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:13:08.156Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:13:08.156Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:13:08.159Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:13:08.160Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:13:08.160Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:13:08.161Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:13:08.163Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:13:08.168Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T06:13:08.168Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:13:08.171Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:13:08.171Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:13:08.189Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:13:08.190Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:13:08.190Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:13:08.191Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:13:08.191Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:13:08.191Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:13:08.198Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:13:08.199Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:13:08.199Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:13:08.199Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:13:08.200Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:13:08.210Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T06:13:08.411Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~2s
+[debug] [2020-01-22T06:13:10.752Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:13:10.752Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:14:14.813Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:14:14.814Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:14:14.814Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:14:14.814Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:14:14.814Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:14:14.815Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:14:14.816Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:14:14.816Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:14:14.817Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:14:14.818Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:14:14.820Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:14:14.827Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T06:14:14.830Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:14:14.834Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:14:14.834Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:14:14.863Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:14:14.864Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:14:14.864Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:14:14.864Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:14:14.864Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:14:14.864Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:14:14.867Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:14:14.868Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:14:14.868Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:14:14.869Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:14:14.871Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:14:14.880Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T06:14:15.195Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:14:16.353Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:14:16.353Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:15:20.405Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:15:20.405Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:15:20.406Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:15:20.406Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:15:20.406Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:15:20.407Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:15:20.408Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:15:20.409Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:15:20.410Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:15:20.412Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:15:20.414Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:15:20.419Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T06:15:20.420Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:15:20.424Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:15:20.424Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:15:20.444Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:15:20.444Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:15:20.445Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:15:20.445Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:15:20.445Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:15:20.445Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:15:20.446Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:15:20.447Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:15:20.447Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:15:20.447Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:15:20.448Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:15:20.454Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T06:15:20.703Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:15:21.533Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:15:21.533Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:15:42.381Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:15:42.384Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:15:42.384Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:15:42.384Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:15:42.385Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:15:42.385Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:15:42.386Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:15:42.387Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:15:42.387Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:15:42.389Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:15:42.399Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:15:42.409Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T06:15:42.425Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:15:42.427Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:15:42.427Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:15:42.440Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:15:42.440Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:15:42.440Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:15:42.440Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:15:42.441Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:15:42.441Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:15:42.441Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:15:42.442Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:15:42.442Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:15:42.442Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:15:42.443Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:15:42.447Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T06:15:42.675Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:15:43.241Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:15:43.241Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:16:29.711Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:16:29.711Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:16:29.712Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:16:29.712Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:16:29.713Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:16:29.713Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:16:29.720Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:16:29.723Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:16:29.724Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:16:29.727Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:16:29.728Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:16:29.733Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T06:16:29.735Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:16:29.736Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:16:29.736Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:16:29.748Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:16:29.748Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:16:29.748Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:16:29.748Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:16:29.748Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:16:29.749Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:16:29.749Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:16:29.750Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:16:29.750Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:16:29.751Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:16:29.752Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:16:29.760Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T06:16:29.955Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:16:31.201Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:16:31.201Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:16:47.811Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:16:47.811Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:16:47.812Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:16:47.812Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:16:47.812Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:16:47.812Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:16:47.813Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:16:47.814Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:16:47.814Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:16:47.815Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:16:47.816Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:16:47.822Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T06:16:47.825Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:16:47.825Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:16:47.826Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:16:47.860Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:16:47.860Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:16:47.861Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:16:47.861Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:16:47.861Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:16:47.861Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:16:47.867Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:16:47.869Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:16:47.870Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:16:47.870Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:16:47.871Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:16:47.886Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T06:16:48.107Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:16:48.861Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:16:48.862Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:18:11.703Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:18:11.703Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:18:11.704Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:18:11.704Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:18:11.704Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:18:11.704Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:18:11.705Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:18:11.706Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:18:11.706Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:18:11.709Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:18:11.710Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:18:11.716Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T06:18:11.718Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:18:11.719Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:18:11.719Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:18:11.745Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:18:11.746Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:18:11.746Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:18:11.746Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:18:11.746Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:18:11.746Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:18:11.747Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:18:11.749Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:18:11.749Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:18:11.749Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:18:11.750Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:18:11.759Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T06:18:11.962Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:18:12.839Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:18:12.839Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:19:26.599Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:19:26.599Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:19:26.599Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:19:26.599Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:19:26.600Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:19:26.600Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:19:26.601Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:19:26.601Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:19:26.602Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:19:26.602Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:19:26.604Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:19:26.609Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T06:19:26.610Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:19:26.611Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:19:26.611Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:19:26.646Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:19:26.646Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:19:26.646Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:19:26.646Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:19:26.647Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:19:26.647Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:19:26.649Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:19:26.649Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:19:26.649Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:19:26.653Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:19:26.656Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:19:26.663Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T06:19:26.859Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:19:27.654Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:19:27.654Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:32:45.525Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:32:45.526Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:32:45.526Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:32:45.526Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:32:45.526Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:32:45.527Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:32:45.528Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:32:45.529Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:32:45.529Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:32:45.530Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:32:45.532Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:32:45.540Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T06:32:45.543Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:32:45.545Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:32:45.545Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:32:45.570Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:32:45.571Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:32:45.571Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:32:45.571Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:32:45.572Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:32:45.572Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:32:45.573Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:32:45.574Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:32:45.574Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:32:45.575Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:32:45.576Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:32:45.584Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T06:32:45.788Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:32:47.013Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:32:47.013Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:33:21.305Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:33:21.306Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:33:21.306Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:33:21.306Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:33:21.307Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:33:21.307Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:33:21.310Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:33:21.310Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:33:21.311Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:33:21.311Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:33:21.312Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:33:21.320Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T06:33:21.320Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:33:21.321Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:33:21.321Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:33:21.349Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:33:21.350Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:33:21.350Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:33:21.350Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:33:21.350Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:33:21.350Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:33:21.352Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:33:21.352Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:33:21.353Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:33:21.353Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:33:21.354Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:33:21.358Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T06:33:21.556Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:33:22.600Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:33:22.600Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:34:54.577Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:34:54.577Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:34:54.577Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:34:54.577Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:34:54.578Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:34:54.578Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:34:54.579Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:34:54.581Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:34:54.582Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:34:54.584Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:34:54.587Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:34:54.594Z] [runtime-status] [26611] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T06:34:54.595Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:34:54.597Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:34:54.597Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T06:34:54.623Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T06:34:54.623Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T06:34:54.623Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T06:34:54.624Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T06:34:54.624Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: Assigning socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:34:54.624Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: BUSY
+[debug] [2020-01-22T06:34:54.624Z] [runtime-status] [26611] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T06:34:54.625Z] [runtime-status] [26611] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T06:34:54.625Z] [runtime-status] [26611] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T06:34:54.626Z] [runtime-status] [26611] Attempting to listen to socketPath: /tmp/fire_emu_26611.sock
+[debug] [2020-01-22T06:34:54.627Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T06:34:54.638Z] [runtime-status] [26611] Ephemeral server handling POST request
+[debug] [2020-01-22T06:34:54.844Z] [runtime-status] [26611] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T06:34:55.768Z] [worker-dialogflowGateway-37911ac1-b28c-402c-af2a-ddf620350ac0]: IDLE
+[debug] [2020-01-22T06:34:55.769Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T08:21:10.513Z] ----------------------------------------------------------------------
+[debug] [2020-01-22T08:21:10.516Z] Command:       /home/miftahun/.nvm/versions/node/v13.1.0/bin/node /home/miftahun/.nvm/versions/node/v13.1.0/bin/firebase serve --only functions
+[debug] [2020-01-22T08:21:10.516Z] CLI Version:   7.12.1
+[debug] [2020-01-22T08:21:10.516Z] Platform:      linux
+[debug] [2020-01-22T08:21:10.516Z] Node Version:  v13.1.0
+[debug] [2020-01-22T08:21:10.525Z] Time:          Wed Jan 22 2020 15:21:10 GMT+0700 (Western Indonesia Time)
+[debug] [2020-01-22T08:21:10.526Z] ----------------------------------------------------------------------
+[debug] [2020-01-22T08:21:10.526Z] 
+[debug] [2020-01-22T08:21:10.541Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-22T08:21:10.541Z] > authorizing via signed-in user
+[debug] [2020-01-22T08:21:10.542Z] [iam] checking project newagent-vlmgvi for permissions ["firebase.projects.get"]
+[debug] [2020-01-22T08:21:10.544Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-01-22T08:21:10.544Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-01-22T08:21:10.810Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-22T08:21:10.817Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/newagent-vlmgvi:testIamPermissions  
+
+[debug] [2020-01-22T08:21:12.147Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-22T08:21:12.149Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/newagent-vlmgvi  
+ 
+[debug] [2020-01-22T08:21:13.211Z] <<< HTTP RESPONSE 200
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "13"
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/home/miftahun/server/ira/functions" for Cloud Functions...
+[debug] [2020-01-22T08:21:13.522Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-22T08:21:13.523Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-01-22T08:21:13.523Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-22T08:21:13.524Z] [worker-~diagnostic~-34a312af-add6-495b-a42b-717239630b91]: Assigning socketPath: /tmp/fire_emu_5134.sock
+[debug] [2020-01-22T08:21:13.525Z] [worker-~diagnostic~-34a312af-add6-495b-a42b-717239630b91]: BUSY
+[debug] [2020-01-22T08:21:13.868Z] [runtime-status] [5134] Functions runtime initialized. {"cwd":"/home/miftahun/server/ira/functions","node_version":"13.1.0"}
+[debug] [2020-01-22T08:21:13.869Z] [runtime-status] [5134] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-22T08:21:13.872Z] [runtime-status] [5134] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-22T08:21:13.874Z] [runtime-status] [5134] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-22T08:21:13.875Z] [runtime-status] [5134] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[dialogflowGateway]: http function initialized (http://localhost:5000/newagent-vlmgvi/us-central1/dialogflowGateway).
+[info] ✔  functions[dialogflowWebhook]: http function initialized (http://localhost:5000/newagent-vlmgvi/us-central1/dialogflowWebhook).
+[debug] [2020-01-22T08:21:15.732Z] [worker-~diagnostic~-34a312af-add6-495b-a42b-717239630b91]: IDLE
+[debug] [2020-01-22T08:23:08.332Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T08:23:08.333Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T08:23:08.334Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T08:23:08.342Z] [worker-pool] addWorker(dialogflowGateway)
+[debug] [2020-01-22T08:23:08.342Z] [worker-pool] Adding worker with key dialogflowGateway, total=1
+[debug] [2020-01-22T08:23:08.343Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T08:23:08.343Z] [worker-dialogflowGateway-b62438eb-5938-4664-b0cc-21a79f60341f]: Assigning socketPath: /tmp/fire_emu_5977.sock
+[debug] [2020-01-22T08:23:08.343Z] [worker-dialogflowGateway-b62438eb-5938-4664-b0cc-21a79f60341f]: BUSY
+[debug] [2020-01-22T08:23:08.712Z] [runtime-status] [5977] Functions runtime initialized. {"cwd":"/home/miftahun/server/ira/functions","node_version":"13.1.0"}
+[debug] [2020-01-22T08:23:08.714Z] [runtime-status] [5977] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-22T08:23:08.717Z] [runtime-status] [5977] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-22T08:23:08.718Z] [runtime-status] [5977] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-22T08:23:08.719Z] [runtime-status] [5977] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-22T08:23:09.846Z] [runtime-status] [5977] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T08:23:09.847Z] [runtime-status] [5977] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T08:23:09.847Z] [runtime-status] [5977] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T08:23:09.852Z] [runtime-status] [5977] Attempting to listen to socketPath: /tmp/fire_emu_5977.sock
+[debug] [2020-01-22T08:23:09.860Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T08:23:09.875Z] [runtime-status] [5977] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T08:23:09.884Z] [runtime-status] [5977] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T08:23:09.889Z] [worker-dialogflowGateway-b62438eb-5938-4664-b0cc-21a79f60341f]: IDLE
+[debug] [2020-01-22T08:23:09.890Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T08:23:09.892Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T08:23:09.892Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T08:23:09.892Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T08:23:09.892Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T08:23:09.892Z] [worker-dialogflowGateway-b62438eb-5938-4664-b0cc-21a79f60341f]: Assigning socketPath: /tmp/fire_emu_5977.sock
+[debug] [2020-01-22T08:23:09.892Z] [worker-dialogflowGateway-b62438eb-5938-4664-b0cc-21a79f60341f]: BUSY
+[debug] [2020-01-22T08:23:09.899Z] [runtime-status] [5977] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T08:23:09.899Z] [runtime-status] [5977] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T08:23:09.900Z] [runtime-status] [5977] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T08:23:09.900Z] [runtime-status] [5977] Attempting to listen to socketPath: /tmp/fire_emu_5977.sock
+[debug] [2020-01-22T08:23:09.902Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T08:23:09.928Z] [runtime-status] [5977] Ephemeral server handling POST request
+[debug] [2020-01-22T08:23:10.324Z] [runtime-status] [5977] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T08:23:11.626Z] [worker-dialogflowGateway-b62438eb-5938-4664-b0cc-21a79f60341f]: IDLE
+[debug] [2020-01-22T08:23:11.626Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T08:35:50.021Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T08:35:50.022Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T08:35:50.022Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T08:35:50.022Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T08:35:50.023Z] [worker-dialogflowGateway-b62438eb-5938-4664-b0cc-21a79f60341f]: Assigning socketPath: /tmp/fire_emu_5977.sock
+[debug] [2020-01-22T08:35:50.023Z] [worker-dialogflowGateway-b62438eb-5938-4664-b0cc-21a79f60341f]: BUSY
+[debug] [2020-01-22T08:35:50.025Z] [runtime-status] [5977] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T08:35:50.027Z] [runtime-status] [5977] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T08:35:50.027Z] [runtime-status] [5977] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T08:35:50.030Z] [runtime-status] [5977] Attempting to listen to socketPath: /tmp/fire_emu_5977.sock
+[debug] [2020-01-22T08:35:50.033Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T08:35:50.045Z] [runtime-status] [5977] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T08:35:50.047Z] [runtime-status] [5977] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T08:35:50.051Z] [worker-dialogflowGateway-b62438eb-5938-4664-b0cc-21a79f60341f]: IDLE
+[debug] [2020-01-22T08:35:50.051Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T08:35:50.074Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T08:35:50.074Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T08:35:50.074Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T08:35:50.075Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T08:35:50.075Z] [worker-dialogflowGateway-b62438eb-5938-4664-b0cc-21a79f60341f]: Assigning socketPath: /tmp/fire_emu_5977.sock
+[debug] [2020-01-22T08:35:50.075Z] [worker-dialogflowGateway-b62438eb-5938-4664-b0cc-21a79f60341f]: BUSY
+[debug] [2020-01-22T08:35:50.076Z] [runtime-status] [5977] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T08:35:50.077Z] [runtime-status] [5977] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T08:35:50.077Z] [runtime-status] [5977] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T08:35:50.078Z] [runtime-status] [5977] Attempting to listen to socketPath: /tmp/fire_emu_5977.sock
+[debug] [2020-01-22T08:35:50.080Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T08:35:50.086Z] [runtime-status] [5977] Ephemeral server handling POST request
+[debug] [2020-01-22T08:35:50.377Z] [runtime-status] [5977] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T08:35:51.845Z] [worker-dialogflowGateway-b62438eb-5938-4664-b0cc-21a79f60341f]: IDLE
+[debug] [2020-01-22T08:35:51.845Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T08:36:18.043Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T08:36:18.043Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T08:36:18.043Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T08:36:18.044Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T08:36:18.044Z] [worker-dialogflowGateway-b62438eb-5938-4664-b0cc-21a79f60341f]: Assigning socketPath: /tmp/fire_emu_5977.sock
+[debug] [2020-01-22T08:36:18.044Z] [worker-dialogflowGateway-b62438eb-5938-4664-b0cc-21a79f60341f]: BUSY
+[debug] [2020-01-22T08:36:18.046Z] [runtime-status] [5977] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T08:36:18.047Z] [runtime-status] [5977] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T08:36:18.047Z] [runtime-status] [5977] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T08:36:18.048Z] [runtime-status] [5977] Attempting to listen to socketPath: /tmp/fire_emu_5977.sock
+[debug] [2020-01-22T08:36:18.050Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T08:36:18.054Z] [runtime-status] [5977] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T08:36:18.059Z] [runtime-status] [5977] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T08:36:18.060Z] [worker-dialogflowGateway-b62438eb-5938-4664-b0cc-21a79f60341f]: IDLE
+[debug] [2020-01-22T08:36:18.060Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-01-22T08:36:18.087Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-01-22T08:36:18.088Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T08:36:18.088Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T08:36:18.088Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T08:36:18.088Z] [worker-dialogflowGateway-b62438eb-5938-4664-b0cc-21a79f60341f]: Assigning socketPath: /tmp/fire_emu_5977.sock
+[debug] [2020-01-22T08:36:18.088Z] [worker-dialogflowGateway-b62438eb-5938-4664-b0cc-21a79f60341f]: BUSY
+[debug] [2020-01-22T08:36:18.089Z] [runtime-status] [5977] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T08:36:18.090Z] [runtime-status] [5977] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T08:36:18.090Z] [runtime-status] [5977] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T08:36:18.091Z] [runtime-status] [5977] Attempting to listen to socketPath: /tmp/fire_emu_5977.sock
+[debug] [2020-01-22T08:36:18.092Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T08:36:18.101Z] [runtime-status] [5977] Ephemeral server handling POST request
+[debug] [2020-01-22T08:36:18.356Z] [runtime-status] [5977] Ephemeral server survived.
+[info] >  (node:5977) UnhandledPromiseRejectionWarning: Error: 14 UNAVAILABLE: No connection established
+[info] >      at Object.callErrorFromStatus (/home/miftahun/server/ira/functions/node_modules/@grpc/grpc-js/build/src/call.js:30:26)
+[info] >      at Http2CallStream.<anonymous> (/home/miftahun/server/ira/functions/node_modules/@grpc/grpc-js/build/src/client.js:96:33)
+[info] >      at Http2CallStream.emit (events.js:215:7)
+[info] >      at /home/miftahun/server/ira/functions/node_modules/@grpc/grpc-js/build/src/call-stream.js:97:22
+[info] >      at processTicksAndRejections (internal/process/task_queues.js:75:11)
+[info] >  (node:5977) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+[info] >  (node:5977) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[debug] [2020-01-22T08:36:35.537Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-22T08:36:35.537Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-22T08:36:35.537Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T08:36:35.548Z] [worker-pool] addWorker(dialogflowGateway)
+[debug] [2020-01-22T08:36:35.549Z] [worker-pool] Adding worker with key dialogflowGateway, total=2
+[debug] [2020-01-22T08:36:35.549Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T08:36:35.549Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: Assigning socketPath: /tmp/fire_emu_7518.sock
+[debug] [2020-01-22T08:36:35.550Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: BUSY
+[debug] [2020-01-22T08:36:35.905Z] [runtime-status] [7518] Functions runtime initialized. {"cwd":"/home/miftahun/server/ira/functions","node_version":"13.1.0"}
+[debug] [2020-01-22T08:36:35.907Z] [runtime-status] [7518] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-22T08:36:35.911Z] [runtime-status] [7518] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-22T08:36:35.913Z] [runtime-status] [7518] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-22T08:36:35.914Z] [runtime-status] [7518] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-22T08:36:36.985Z] [runtime-status] [7518] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T08:36:36.986Z] [runtime-status] [7518] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T08:36:36.986Z] [runtime-status] [7518] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T08:36:36.993Z] [runtime-status] [7518] Attempting to listen to socketPath: /tmp/fire_emu_7518.sock
+[debug] [2020-01-22T08:36:36.997Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T08:36:37.008Z] [runtime-status] [7518] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T08:36:37.016Z] [runtime-status] [7518] Ephemeral server survived.
+[debug] [2020-01-22T08:36:37.018Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-01-22T08:36:37.018Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-22T08:36:37.018Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T08:36:37.025Z] [worker-pool] addWorker(dialogflowGateway)
+[debug] [2020-01-22T08:36:37.025Z] [worker-pool] Adding worker with key dialogflowGateway, total=3
+[debug] [2020-01-22T08:36:37.026Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T08:36:37.026Z] [worker-dialogflowGateway-807032ab-81dc-444a-a65a-5e49b84d5c10]: Assigning socketPath: /tmp/fire_emu_7525.sock
+[debug] [2020-01-22T08:36:37.026Z] [worker-dialogflowGateway-807032ab-81dc-444a-a65a-5e49b84d5c10]: BUSY
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T08:36:37.028Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: IDLE
+[debug] [2020-01-22T08:36:37.028Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-22T08:36:37.372Z] [runtime-status] [7525] Functions runtime initialized. {"cwd":"/home/miftahun/server/ira/functions","node_version":"13.1.0"}
+[debug] [2020-01-22T08:36:37.376Z] [runtime-status] [7525] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-22T08:36:37.379Z] [runtime-status] [7525] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-22T08:36:37.381Z] [runtime-status] [7525] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-22T08:36:37.382Z] [runtime-status] [7525] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-22T08:36:38.428Z] [runtime-status] [7525] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T08:36:38.429Z] [runtime-status] [7525] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T08:36:38.429Z] [runtime-status] [7525] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T08:36:38.435Z] [runtime-status] [7525] Attempting to listen to socketPath: /tmp/fire_emu_7525.sock
+[debug] [2020-01-22T08:36:38.440Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T08:36:38.467Z] [runtime-status] [7525] Ephemeral server handling POST request
+[debug] [2020-01-22T08:36:38.915Z] [runtime-status] [7525] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T08:36:39.872Z] [worker-dialogflowGateway-807032ab-81dc-444a-a65a-5e49b84d5c10]: IDLE
+[debug] [2020-01-22T08:36:39.872Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T08:38:08.168Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-22T08:38:08.168Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-22T08:38:08.168Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T08:38:08.169Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T08:38:08.169Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: Assigning socketPath: /tmp/fire_emu_7518.sock
+[debug] [2020-01-22T08:38:08.169Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: BUSY
+[debug] [2020-01-22T08:38:08.174Z] [runtime-status] [7518] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T08:38:08.175Z] [runtime-status] [7518] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T08:38:08.175Z] [runtime-status] [7518] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T08:38:08.175Z] [runtime-status] [7518] Attempting to listen to socketPath: /tmp/fire_emu_7518.sock
+[debug] [2020-01-22T08:38:08.177Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T08:38:08.184Z] [runtime-status] [7518] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T08:38:08.184Z] [runtime-status] [7518] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T08:38:08.186Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: IDLE
+[debug] [2020-01-22T08:38:08.187Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T08:38:08.196Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-22T08:38:08.196Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-22T08:38:08.197Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T08:38:08.197Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T08:38:08.197Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: Assigning socketPath: /tmp/fire_emu_7518.sock
+[debug] [2020-01-22T08:38:08.197Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: BUSY
+[debug] [2020-01-22T08:38:08.199Z] [runtime-status] [7518] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T08:38:08.199Z] [runtime-status] [7518] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T08:38:08.200Z] [runtime-status] [7518] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T08:38:08.200Z] [runtime-status] [7518] Attempting to listen to socketPath: /tmp/fire_emu_7518.sock
+[debug] [2020-01-22T08:38:08.202Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T08:38:08.230Z] [runtime-status] [7518] Ephemeral server handling POST request
+[debug] [2020-01-22T08:38:08.622Z] [runtime-status] [7518] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T08:38:09.688Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: IDLE
+[debug] [2020-01-22T08:38:09.688Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T08:38:47.012Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-22T08:38:47.012Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-22T08:38:47.012Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T08:38:47.012Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T08:38:47.013Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: Assigning socketPath: /tmp/fire_emu_7518.sock
+[debug] [2020-01-22T08:38:47.013Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: BUSY
+[debug] [2020-01-22T08:38:47.014Z] [runtime-status] [7518] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T08:38:47.015Z] [runtime-status] [7518] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T08:38:47.015Z] [runtime-status] [7518] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T08:38:47.016Z] [runtime-status] [7518] Attempting to listen to socketPath: /tmp/fire_emu_7518.sock
+[debug] [2020-01-22T08:38:47.018Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T08:38:47.023Z] [runtime-status] [7518] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T08:38:47.027Z] [runtime-status] [7518] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T08:38:47.029Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: IDLE
+[debug] [2020-01-22T08:38:47.029Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T08:38:47.049Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-22T08:38:47.049Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-22T08:38:47.049Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T08:38:47.050Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T08:38:47.050Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: Assigning socketPath: /tmp/fire_emu_7518.sock
+[debug] [2020-01-22T08:38:47.050Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: BUSY
+[debug] [2020-01-22T08:38:47.053Z] [runtime-status] [7518] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T08:38:47.054Z] [runtime-status] [7518] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T08:38:47.054Z] [runtime-status] [7518] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T08:38:47.054Z] [runtime-status] [7518] Attempting to listen to socketPath: /tmp/fire_emu_7518.sock
+[debug] [2020-01-22T08:38:47.055Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T08:38:47.060Z] [runtime-status] [7518] Ephemeral server handling POST request
+[debug] [2020-01-22T08:38:47.333Z] [runtime-status] [7518] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T08:38:48.150Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: IDLE
+[debug] [2020-01-22T08:38:48.150Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T08:39:23.707Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-22T08:39:23.708Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-22T08:39:23.708Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T08:39:23.708Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T08:39:23.708Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: Assigning socketPath: /tmp/fire_emu_7518.sock
+[debug] [2020-01-22T08:39:23.709Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: BUSY
+[debug] [2020-01-22T08:39:23.710Z] [runtime-status] [7518] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T08:39:23.711Z] [runtime-status] [7518] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T08:39:23.712Z] [runtime-status] [7518] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T08:39:23.716Z] [runtime-status] [7518] Attempting to listen to socketPath: /tmp/fire_emu_7518.sock
+[debug] [2020-01-22T08:39:23.718Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T08:39:23.724Z] [runtime-status] [7518] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T08:39:23.731Z] [runtime-status] [7518] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T08:39:23.733Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: IDLE
+[debug] [2020-01-22T08:39:23.733Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T08:39:23.745Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-22T08:39:23.746Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-22T08:39:23.746Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T08:39:23.746Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T08:39:23.746Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: Assigning socketPath: /tmp/fire_emu_7518.sock
+[debug] [2020-01-22T08:39:23.746Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: BUSY
+[debug] [2020-01-22T08:39:23.747Z] [runtime-status] [7518] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T08:39:23.748Z] [runtime-status] [7518] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T08:39:23.748Z] [runtime-status] [7518] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T08:39:23.748Z] [runtime-status] [7518] Attempting to listen to socketPath: /tmp/fire_emu_7518.sock
+[debug] [2020-01-22T08:39:23.750Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T08:39:23.757Z] [runtime-status] [7518] Ephemeral server handling POST request
+[debug] [2020-01-22T08:39:23.975Z] [runtime-status] [7518] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T08:39:24.677Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: IDLE
+[debug] [2020-01-22T08:39:24.678Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T08:40:41.461Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-22T08:40:41.461Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-22T08:40:41.461Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T08:40:41.461Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T08:40:41.462Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: Assigning socketPath: /tmp/fire_emu_7518.sock
+[debug] [2020-01-22T08:40:41.462Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: BUSY
+[debug] [2020-01-22T08:40:41.463Z] [runtime-status] [7518] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T08:40:41.464Z] [runtime-status] [7518] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T08:40:41.464Z] [runtime-status] [7518] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T08:40:41.466Z] [runtime-status] [7518] Attempting to listen to socketPath: /tmp/fire_emu_7518.sock
+[debug] [2020-01-22T08:40:41.469Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T08:40:41.475Z] [runtime-status] [7518] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T08:40:41.479Z] [runtime-status] [7518] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T08:40:41.480Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: IDLE
+[debug] [2020-01-22T08:40:41.481Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T08:40:41.505Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-22T08:40:41.505Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-22T08:40:41.505Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T08:40:41.506Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T08:40:41.506Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: Assigning socketPath: /tmp/fire_emu_7518.sock
+[debug] [2020-01-22T08:40:41.506Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: BUSY
+[debug] [2020-01-22T08:40:41.507Z] [runtime-status] [7518] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T08:40:41.508Z] [runtime-status] [7518] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T08:40:41.508Z] [runtime-status] [7518] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T08:40:41.509Z] [runtime-status] [7518] Attempting to listen to socketPath: /tmp/fire_emu_7518.sock
+[debug] [2020-01-22T08:40:41.511Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T08:40:41.519Z] [runtime-status] [7518] Ephemeral server handling POST request
+[debug] [2020-01-22T08:40:41.753Z] [runtime-status] [7518] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T08:40:42.713Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: IDLE
+[debug] [2020-01-22T08:40:42.713Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T09:23:22.164Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-22T09:23:22.164Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-22T09:23:22.164Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T09:23:22.165Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T09:23:22.165Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: Assigning socketPath: /tmp/fire_emu_7518.sock
+[debug] [2020-01-22T09:23:22.165Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: BUSY
+[debug] [2020-01-22T09:23:22.166Z] [runtime-status] [7518] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T09:23:22.167Z] [runtime-status] [7518] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T09:23:22.167Z] [runtime-status] [7518] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T09:23:22.168Z] [runtime-status] [7518] Attempting to listen to socketPath: /tmp/fire_emu_7518.sock
+[debug] [2020-01-22T09:23:22.170Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T09:23:22.176Z] [runtime-status] [7518] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T09:23:22.177Z] [runtime-status] [7518] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T09:23:22.178Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: IDLE
+[debug] [2020-01-22T09:23:22.178Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-01-22T09:23:22.201Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-01-22T09:23:22.201Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-22T09:23:22.201Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T09:23:22.202Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T09:23:22.202Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: Assigning socketPath: /tmp/fire_emu_7518.sock
+[debug] [2020-01-22T09:23:22.202Z] [worker-dialogflowGateway-5ffd8d91-0e2a-478a-b5ba-a31b6f5dac4a]: BUSY
+[debug] [2020-01-22T09:23:22.204Z] [runtime-status] [7518] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T09:23:22.204Z] [runtime-status] [7518] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T09:23:22.206Z] [runtime-status] [7518] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T09:23:22.206Z] [runtime-status] [7518] Attempting to listen to socketPath: /tmp/fire_emu_7518.sock
+[debug] [2020-01-22T09:23:22.207Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T09:23:22.212Z] [runtime-status] [7518] Ephemeral server handling POST request
+[debug] [2020-01-22T09:23:22.403Z] [runtime-status] [7518] Ephemeral server survived.
+[debug] [2020-01-22T09:23:57.318Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-01-22T09:23:57.319Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-22T09:23:57.319Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T09:23:57.319Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T09:23:57.319Z] [worker-dialogflowGateway-807032ab-81dc-444a-a65a-5e49b84d5c10]: Assigning socketPath: /tmp/fire_emu_7525.sock
+[debug] [2020-01-22T09:23:57.319Z] [worker-dialogflowGateway-807032ab-81dc-444a-a65a-5e49b84d5c10]: BUSY
+[debug] [2020-01-22T09:23:57.324Z] [runtime-status] [7525] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T09:23:57.325Z] [runtime-status] [7525] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T09:23:57.325Z] [runtime-status] [7525] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T09:23:57.325Z] [runtime-status] [7525] Attempting to listen to socketPath: /tmp/fire_emu_7525.sock
+[debug] [2020-01-22T09:23:57.327Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T09:23:57.333Z] [runtime-status] [7525] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T09:23:57.335Z] [runtime-status] [7525] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T09:23:57.335Z] [worker-dialogflowGateway-807032ab-81dc-444a-a65a-5e49b84d5c10]: IDLE
+[debug] [2020-01-22T09:23:57.336Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-22T09:23:57.353Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-01-22T09:23:57.354Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-22T09:23:57.354Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T09:23:57.354Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T09:23:57.355Z] [worker-dialogflowGateway-807032ab-81dc-444a-a65a-5e49b84d5c10]: Assigning socketPath: /tmp/fire_emu_7525.sock
+[debug] [2020-01-22T09:23:57.355Z] [worker-dialogflowGateway-807032ab-81dc-444a-a65a-5e49b84d5c10]: BUSY
+[debug] [2020-01-22T09:23:57.356Z] [runtime-status] [7525] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T09:23:57.357Z] [runtime-status] [7525] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T09:23:57.357Z] [runtime-status] [7525] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T09:23:57.358Z] [runtime-status] [7525] Attempting to listen to socketPath: /tmp/fire_emu_7525.sock
+[debug] [2020-01-22T09:23:57.361Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T09:23:57.366Z] [runtime-status] [7525] Ephemeral server handling POST request
+[debug] [2020-01-22T09:23:57.726Z] [runtime-status] [7525] Ephemeral server survived.
+[debug] [2020-01-22T09:24:13.936Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-01-22T09:24:13.936Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-22T09:24:13.936Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T09:24:13.944Z] [worker-pool] addWorker(dialogflowGateway)
+[debug] [2020-01-22T09:24:13.945Z] [worker-pool] Adding worker with key dialogflowGateway, total=4
+[debug] [2020-01-22T09:24:13.945Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T09:24:13.945Z] [worker-dialogflowGateway-5eac57e1-e032-4802-aad0-55240f323fd6]: Assigning socketPath: /tmp/fire_emu_9512.sock
+[debug] [2020-01-22T09:24:13.945Z] [worker-dialogflowGateway-5eac57e1-e032-4802-aad0-55240f323fd6]: BUSY
+[debug] [2020-01-22T09:24:14.298Z] [runtime-status] [9512] Functions runtime initialized. {"cwd":"/home/miftahun/server/ira/functions","node_version":"13.1.0"}
+[debug] [2020-01-22T09:24:14.300Z] [runtime-status] [9512] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-22T09:24:14.303Z] [runtime-status] [9512] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-22T09:24:14.306Z] [runtime-status] [9512] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-22T09:24:14.307Z] [runtime-status] [9512] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-22T09:24:15.358Z] [runtime-status] [9512] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T09:24:15.359Z] [runtime-status] [9512] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T09:24:15.360Z] [runtime-status] [9512] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T09:24:15.365Z] [runtime-status] [9512] Attempting to listen to socketPath: /tmp/fire_emu_9512.sock
+[debug] [2020-01-22T09:24:15.371Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T09:24:15.381Z] [runtime-status] [9512] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T09:24:15.391Z] [runtime-status] [9512] Ephemeral server survived.
+[debug] [2020-01-22T09:24:15.393Z] [work-queue] {"queueLength":1,"workRunningCount":4}
+[debug] [2020-01-22T09:24:15.394Z] [work-queue] {"queueLength":0,"workRunningCount":5}
+[debug] [2020-01-22T09:24:15.394Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T09:24:15.401Z] [worker-pool] addWorker(dialogflowGateway)
+[debug] [2020-01-22T09:24:15.401Z] [worker-pool] Adding worker with key dialogflowGateway, total=5
+[debug] [2020-01-22T09:24:15.401Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T09:24:15.401Z] [worker-dialogflowGateway-6a0c0cf9-ea30-4252-9643-f3c7c1e62d02]: Assigning socketPath: /tmp/fire_emu_9519.sock
+[debug] [2020-01-22T09:24:15.401Z] [worker-dialogflowGateway-6a0c0cf9-ea30-4252-9643-f3c7c1e62d02]: BUSY
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T09:24:15.403Z] [worker-dialogflowGateway-5eac57e1-e032-4802-aad0-55240f323fd6]: IDLE
+[debug] [2020-01-22T09:24:15.403Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-22T09:24:15.757Z] [runtime-status] [9519] Functions runtime initialized. {"cwd":"/home/miftahun/server/ira/functions","node_version":"13.1.0"}
+[debug] [2020-01-22T09:24:15.759Z] [runtime-status] [9519] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-22T09:24:15.762Z] [runtime-status] [9519] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.1","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-22T09:24:15.763Z] [runtime-status] [9519] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-22T09:24:15.764Z] [runtime-status] [9519] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/miftahun/server/ira/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-22T09:24:16.809Z] [runtime-status] [9519] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T09:24:16.809Z] [runtime-status] [9519] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T09:24:16.809Z] [runtime-status] [9519] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T09:24:16.817Z] [runtime-status] [9519] Attempting to listen to socketPath: /tmp/fire_emu_9519.sock
+[debug] [2020-01-22T09:24:16.821Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T09:24:16.849Z] [runtime-status] [9519] Ephemeral server handling POST request
+[debug] [2020-01-22T09:24:17.258Z] [runtime-status] [9519] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~38s
+[debug] [2020-01-22T09:24:35.461Z] [worker-dialogflowGateway-807032ab-81dc-444a-a65a-5e49b84d5c10]: IDLE
+[debug] [2020-01-22T09:24:35.462Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[info] i  functions: Finished "dialogflowGateway" in ~44s
+[debug] [2020-01-22T09:25:01.689Z] [worker-dialogflowGateway-6a0c0cf9-ea30-4252-9643-f3c7c1e62d02]: IDLE
+[debug] [2020-01-22T09:25:01.689Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[info] >  (node:7518) UnhandledPromiseRejectionWarning: Error: ECONNRESET undefined: Getting metadata from plugin failed with error: request to https://www.googleapis.com/oauth2/v4/token failed, reason: read ECONNRESET
+[info] >      at Object.callErrorFromStatus (/home/miftahun/server/ira/functions/node_modules/@grpc/grpc-js/build/src/call.js:30:26)
+[info] >      at Http2CallStream.<anonymous> (/home/miftahun/server/ira/functions/node_modules/@grpc/grpc-js/build/src/client.js:96:33)
+[info] >      at Http2CallStream.emit (events.js:215:7)
+[info] >      at /home/miftahun/server/ira/functions/node_modules/@grpc/grpc-js/build/src/call-stream.js:97:22
+[info] >      at processTicksAndRejections (internal/process/task_queues.js:75:11)
+[info] >  (node:7518) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+[info] >  (node:7518) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[debug] [2020-01-22T09:33:36.790Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-01-22T09:33:36.790Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-22T09:33:36.790Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T09:33:36.791Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T09:33:36.791Z] [worker-dialogflowGateway-807032ab-81dc-444a-a65a-5e49b84d5c10]: Assigning socketPath: /tmp/fire_emu_7525.sock
+[debug] [2020-01-22T09:33:36.791Z] [worker-dialogflowGateway-807032ab-81dc-444a-a65a-5e49b84d5c10]: BUSY
+[debug] [2020-01-22T09:33:36.795Z] [runtime-status] [7525] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T09:33:36.796Z] [runtime-status] [7525] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T09:33:36.796Z] [runtime-status] [7525] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T09:33:36.796Z] [runtime-status] [7525] Attempting to listen to socketPath: /tmp/fire_emu_7525.sock
+[debug] [2020-01-22T09:33:36.797Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T09:33:36.811Z] [runtime-status] [7525] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T09:33:36.811Z] [runtime-status] [7525] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T09:33:36.811Z] [worker-dialogflowGateway-807032ab-81dc-444a-a65a-5e49b84d5c10]: IDLE
+[debug] [2020-01-22T09:33:36.812Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-22T09:33:36.829Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-01-22T09:33:36.829Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-22T09:33:36.829Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T09:33:36.829Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T09:33:36.829Z] [worker-dialogflowGateway-807032ab-81dc-444a-a65a-5e49b84d5c10]: Assigning socketPath: /tmp/fire_emu_7525.sock
+[debug] [2020-01-22T09:33:36.830Z] [worker-dialogflowGateway-807032ab-81dc-444a-a65a-5e49b84d5c10]: BUSY
+[debug] [2020-01-22T09:33:36.831Z] [runtime-status] [7525] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T09:33:36.831Z] [runtime-status] [7525] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T09:33:36.831Z] [runtime-status] [7525] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T09:33:36.832Z] [runtime-status] [7525] Attempting to listen to socketPath: /tmp/fire_emu_7525.sock
+[debug] [2020-01-22T09:33:36.833Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T09:33:36.840Z] [runtime-status] [7525] Ephemeral server handling POST request
+[debug] [2020-01-22T09:33:37.080Z] [runtime-status] [7525] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T09:33:38.739Z] [worker-dialogflowGateway-807032ab-81dc-444a-a65a-5e49b84d5c10]: IDLE
+[debug] [2020-01-22T09:33:38.739Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-22T09:34:16.680Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-01-22T09:34:16.680Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-22T09:34:16.680Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T09:34:16.680Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T09:34:16.681Z] [worker-dialogflowGateway-807032ab-81dc-444a-a65a-5e49b84d5c10]: Assigning socketPath: /tmp/fire_emu_7525.sock
+[debug] [2020-01-22T09:34:16.681Z] [worker-dialogflowGateway-807032ab-81dc-444a-a65a-5e49b84d5c10]: BUSY
+[debug] [2020-01-22T09:34:16.682Z] [runtime-status] [7525] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T09:34:16.684Z] [runtime-status] [7525] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T09:34:16.684Z] [runtime-status] [7525] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T09:34:16.687Z] [runtime-status] [7525] Attempting to listen to socketPath: /tmp/fire_emu_7525.sock
+[debug] [2020-01-22T09:34:16.691Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T09:34:16.700Z] [runtime-status] [7525] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T09:34:16.702Z] [runtime-status] [7525] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T09:34:16.703Z] [worker-dialogflowGateway-807032ab-81dc-444a-a65a-5e49b84d5c10]: IDLE
+[debug] [2020-01-22T09:34:16.704Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-01-22T09:34:16.733Z] [work-queue] {"queueLength":1,"workRunningCount":2}
+[debug] [2020-01-22T09:34:16.733Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-22T09:34:16.734Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T09:34:16.734Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T09:34:16.734Z] [worker-dialogflowGateway-807032ab-81dc-444a-a65a-5e49b84d5c10]: Assigning socketPath: /tmp/fire_emu_7525.sock
+[debug] [2020-01-22T09:34:16.734Z] [worker-dialogflowGateway-807032ab-81dc-444a-a65a-5e49b84d5c10]: BUSY
+[debug] [2020-01-22T09:34:16.735Z] [runtime-status] [7525] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T09:34:16.736Z] [runtime-status] [7525] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T09:34:16.736Z] [runtime-status] [7525] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T09:34:16.739Z] [runtime-status] [7525] Attempting to listen to socketPath: /tmp/fire_emu_7525.sock
+[debug] [2020-01-22T09:34:16.741Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T09:34:16.748Z] [runtime-status] [7525] Ephemeral server handling POST request
+[debug] [2020-01-22T09:34:16.968Z] [runtime-status] [7525] Ephemeral server survived.
+[info] >  (node:7525) UnhandledPromiseRejectionWarning: Error: 14 UNAVAILABLE: No connection established
+[info] >      at Object.callErrorFromStatus (/home/miftahun/server/ira/functions/node_modules/@grpc/grpc-js/build/src/call.js:30:26)
+[info] >      at Http2CallStream.<anonymous> (/home/miftahun/server/ira/functions/node_modules/@grpc/grpc-js/build/src/client.js:96:33)
+[info] >      at Http2CallStream.emit (events.js:215:7)
+[info] >      at /home/miftahun/server/ira/functions/node_modules/@grpc/grpc-js/build/src/call-stream.js:97:22
+[info] >      at processTicksAndRejections (internal/process/task_queues.js:75:11)
+[info] >      at runNextTicks (internal/process/task_queues.js:62:3)
+[info] >      at listOnTimeout (internal/timers.js:501:9)
+[info] >      at processTimers (internal/timers.js:475:7)
+[info] >  (node:7525) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+[info] >  (node:7525) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[debug] [2020-01-22T09:34:31.385Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-01-22T09:34:31.385Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-22T09:34:31.385Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T09:34:31.386Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T09:34:31.386Z] [worker-dialogflowGateway-5eac57e1-e032-4802-aad0-55240f323fd6]: Assigning socketPath: /tmp/fire_emu_9512.sock
+[debug] [2020-01-22T09:34:31.386Z] [worker-dialogflowGateway-5eac57e1-e032-4802-aad0-55240f323fd6]: BUSY
+[debug] [2020-01-22T09:34:31.387Z] [runtime-status] [9512] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T09:34:31.388Z] [runtime-status] [9512] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T09:34:31.388Z] [runtime-status] [9512] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T09:34:31.389Z] [runtime-status] [9512] Attempting to listen to socketPath: /tmp/fire_emu_9512.sock
+[debug] [2020-01-22T09:34:31.391Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T09:34:31.400Z] [runtime-status] [9512] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T09:34:31.400Z] [runtime-status] [9512] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T09:34:31.403Z] [worker-dialogflowGateway-5eac57e1-e032-4802-aad0-55240f323fd6]: IDLE
+[debug] [2020-01-22T09:34:31.403Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-22T09:34:31.409Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-01-22T09:34:31.409Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-22T09:34:31.409Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T09:34:31.409Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T09:34:31.410Z] [worker-dialogflowGateway-5eac57e1-e032-4802-aad0-55240f323fd6]: Assigning socketPath: /tmp/fire_emu_9512.sock
+[debug] [2020-01-22T09:34:31.410Z] [worker-dialogflowGateway-5eac57e1-e032-4802-aad0-55240f323fd6]: BUSY
+[debug] [2020-01-22T09:34:31.414Z] [runtime-status] [9512] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T09:34:31.414Z] [runtime-status] [9512] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T09:34:31.414Z] [runtime-status] [9512] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T09:34:31.415Z] [runtime-status] [9512] Attempting to listen to socketPath: /tmp/fire_emu_9512.sock
+[debug] [2020-01-22T09:34:31.417Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T09:34:31.435Z] [runtime-status] [9512] Ephemeral server handling POST request
+[debug] [2020-01-22T09:34:31.853Z] [runtime-status] [9512] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T09:34:32.765Z] [worker-dialogflowGateway-5eac57e1-e032-4802-aad0-55240f323fd6]: IDLE
+[debug] [2020-01-22T09:34:32.765Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-22T09:39:08.950Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-01-22T09:39:08.951Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-22T09:39:08.951Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T09:39:08.951Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T09:39:08.951Z] [worker-dialogflowGateway-5eac57e1-e032-4802-aad0-55240f323fd6]: Assigning socketPath: /tmp/fire_emu_9512.sock
+[debug] [2020-01-22T09:39:08.951Z] [worker-dialogflowGateway-5eac57e1-e032-4802-aad0-55240f323fd6]: BUSY
+[debug] [2020-01-22T09:39:08.952Z] [runtime-status] [9512] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T09:39:08.953Z] [runtime-status] [9512] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T09:39:08.953Z] [runtime-status] [9512] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T09:39:08.954Z] [runtime-status] [9512] Attempting to listen to socketPath: /tmp/fire_emu_9512.sock
+[debug] [2020-01-22T09:39:08.955Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T09:39:08.961Z] [runtime-status] [9512] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T09:39:08.963Z] [runtime-status] [9512] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T09:39:08.964Z] [worker-dialogflowGateway-5eac57e1-e032-4802-aad0-55240f323fd6]: IDLE
+[debug] [2020-01-22T09:39:08.964Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-22T09:39:08.991Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-01-22T09:39:08.991Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-22T09:39:08.991Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T09:39:08.991Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T09:39:08.992Z] [worker-dialogflowGateway-5eac57e1-e032-4802-aad0-55240f323fd6]: Assigning socketPath: /tmp/fire_emu_9512.sock
+[debug] [2020-01-22T09:39:08.992Z] [worker-dialogflowGateway-5eac57e1-e032-4802-aad0-55240f323fd6]: BUSY
+[debug] [2020-01-22T09:39:08.992Z] [runtime-status] [9512] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T09:39:08.993Z] [runtime-status] [9512] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T09:39:08.994Z] [runtime-status] [9512] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T09:39:08.994Z] [runtime-status] [9512] Attempting to listen to socketPath: /tmp/fire_emu_9512.sock
+[debug] [2020-01-22T09:39:08.996Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T09:39:09.000Z] [runtime-status] [9512] Ephemeral server handling POST request
+[debug] [2020-01-22T09:39:09.251Z] [runtime-status] [9512] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T09:39:10.561Z] [worker-dialogflowGateway-5eac57e1-e032-4802-aad0-55240f323fd6]: IDLE
+[debug] [2020-01-22T09:39:10.562Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-22T09:41:32.934Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-01-22T09:41:32.934Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-22T09:41:32.934Z] Accepted request OPTIONS /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T09:41:32.935Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T09:41:32.935Z] [worker-dialogflowGateway-5eac57e1-e032-4802-aad0-55240f323fd6]: Assigning socketPath: /tmp/fire_emu_9512.sock
+[debug] [2020-01-22T09:41:32.935Z] [worker-dialogflowGateway-5eac57e1-e032-4802-aad0-55240f323fd6]: BUSY
+[debug] [2020-01-22T09:41:32.936Z] [runtime-status] [9512] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T09:41:32.937Z] [runtime-status] [9512] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T09:41:32.937Z] [runtime-status] [9512] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T09:41:32.937Z] [runtime-status] [9512] Attempting to listen to socketPath: /tmp/fire_emu_9512.sock
+[debug] [2020-01-22T09:41:32.939Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T09:41:32.944Z] [runtime-status] [9512] Ephemeral server handling OPTIONS request
+[debug] [2020-01-22T09:41:32.945Z] [runtime-status] [9512] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~1s
+[debug] [2020-01-22T09:41:32.946Z] [worker-dialogflowGateway-5eac57e1-e032-4802-aad0-55240f323fd6]: IDLE
+[debug] [2020-01-22T09:41:32.946Z] [work-queue] {"queueLength":0,"workRunningCount":3}
+[debug] [2020-01-22T09:41:32.973Z] [work-queue] {"queueLength":1,"workRunningCount":3}
+[debug] [2020-01-22T09:41:32.973Z] [work-queue] {"queueLength":0,"workRunningCount":4}
+[debug] [2020-01-22T09:41:32.973Z] Accepted request POST /newagent-vlmgvi/us-central1/dialogflowGateway --> dialogflowGateway
+[debug] [2020-01-22T09:41:32.973Z] [worker-pool] submitWork(triggerId=dialogflowGateway)
+[debug] [2020-01-22T09:41:32.974Z] [worker-dialogflowGateway-5eac57e1-e032-4802-aad0-55240f323fd6]: Assigning socketPath: /tmp/fire_emu_9512.sock
+[debug] [2020-01-22T09:41:32.974Z] [worker-dialogflowGateway-5eac57e1-e032-4802-aad0-55240f323fd6]: BUSY
+[debug] [2020-01-22T09:41:32.976Z] [runtime-status] [9512] Trigger "dialogflowGateway" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "dialogflowGateway"
+[debug] [2020-01-22T09:41:32.976Z] [runtime-status] [9512] triggerDefinition {"httpsTrigger":{},"name":"dialogflowGateway","entryPoint":"dialogflowGateway"}
+[debug] [2020-01-22T09:41:32.976Z] [runtime-status] [9512] Running dialogflowGateway in mode HTTPS
+[debug] [2020-01-22T09:41:32.976Z] [runtime-status] [9512] Attempting to listen to socketPath: /tmp/fire_emu_9512.sock
+[debug] [2020-01-22T09:41:32.977Z] [functions] Runtime ready! Sending request!
+[debug] [2020-01-22T09:41:32.981Z] [runtime-status] [9512] Ephemeral server handling POST request
+[debug] [2020-01-22T09:41:33.243Z] [runtime-status] [9512] Ephemeral server survived.
+[info] i  functions: Finished "dialogflowGateway" in ~2s
+[debug] [2020-01-22T09:41:35.339Z] [worker-dialogflowGateway-5eac57e1-e032-4802-aad0-55240f323fd6]: IDLE
+[debug] [2020-01-22T09:41:35.339Z] [work-queue] {"queueLength":0,"workRunningCount":3}
