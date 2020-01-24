@@ -83,6 +83,12 @@ exports.dialogflowWebhook = functions.https.onRequest(
       agent.add(new Suggestion("Ajukan Cuti Sakit"));
     }
 
+    async function lihatJadwalMeetingIntent(agent) {
+      //Ambil dari DB
+      agent.add("Jadwal Meeting Anda adalah" + "")
+      agent.add("Apakah ada yang bisa Ira bantu lagi?");
+    }
+
     async function ajukanCutiSakit(agent) {
       // Do backend stuff here
       // const db = admin.firestore();
@@ -121,6 +127,27 @@ exports.dialogflowWebhook = functions.https.onRequest(
       agent.add(payload);
     }
 
+    async function konfirmasiBuatMeetingIntent(agent) {
+      const datetime = new Date();
+      // agent.requestSource = agent.PLATFORM_UNSPECIFIED;
+      agent.add(
+        ruangan +
+        " untuk jam " +
+        dateformat(time["startTime"], "H:mm") +
+        "sampai jam " +
+        dateformat(time["endTime"], "HH:mm") +
+        " berhasil dipesan untuk meeting Anda. Terimakasih."
+      );
+      agent.add(payload);
+    }
+
+    async function batalBuatMeetingIntent(agent) {
+      const datetime = new Date();
+      // agent.requestSource = agent.PLATFORM_UNSPECIFIED;
+      agent.add("Baik, Anda bisa membooking ruangan lagi nanti. Apakah ada yang bisa Ira bantu lagi?");
+      agent.add(payload);
+    }
+
     async function pengajuanCutiIntent(agent) {
       agent.add(
         "Apakah anda ingin mengajukan untuk cuti tahunan atau cuti Sakit ?"
@@ -132,7 +159,7 @@ exports.dialogflowWebhook = functions.https.onRequest(
     async function ajukanCutiTahunanIntent(agent) {
       const { date, number } = result.parameters;
       agent.add(
-        "Baiklah apakah anda ingin menandai " +
+        "Apakah anda ingin menandai " +
           formatDate(date) +
           " selama " +
           number +
@@ -149,23 +176,32 @@ exports.dialogflowWebhook = functions.https.onRequest(
           formatDate(date) +
           " selama " +
           number +
-          " telah ditambahkan ke aktifitas cuti anda"
+          " telah ditambahkan ke aktifitas cuti anda. Terimakasih."
       );
+    }
+
+    async function batalPengajuanCutiTahunanIntent(agent) {
+      agent.add("Baik, pengajuan cuti Anda tidak jadi ditambahkan.");
+      agent.add("Apakah ada yang bisa Ira bantu lagi?");
     }
 
     async function cekAbsensiIntent(agent) {
       const datetime = new Date();
-
+      /*
+      CARD
+      header @nama
+      body @jumlahmasuk
+      body @jumlahcuti
+      footer @saldocuti 
+      */
       agent.add(
         "Berikut adalah absensi anda bulan " + dateformat(datetime, "mmmm")
       );
-      agent.add("Apakah ada yang bisa dibantu lagi ? ");
+      agent.add("Apakah ada yang bisa dibantu lagi? ");
     }
 
-    async function buatMeetingIntent(agent) {
-      const { ruangan, time } = result.parameters;
-
-      const available = true;
+    async function buatMeetingFormattedIntent(agent) {
+      const datetime = new Date();
       agent.add("Ira cek dulu ketersediaan ruangannya");
       if (available) {
         agent.add(
@@ -178,10 +214,83 @@ exports.dialogflowWebhook = functions.https.onRequest(
         );
         agent.add("Ingin membooking sekarang ?");
         agent.add(new Suggestion("Iya"));
+        agent.add(new Suggestion("Nanti Saja"));
       } else {
         agent.add("Maaf " + ruangan + " untuk jam " + time + " belum tersedia");
         agent.add("Apakah ada yang bisa dibantu lagi ? ");
       }
+    }
+
+    async function buatMeetingIntent(agent) {
+      agent.add("Silahkan ajukan permintaan meeting dengan format sebagai berikut: [Meeting - Ruangan - Waktu - Jumlah Peserta Meeting] Contoh : [Meeting - Ruang C102 - Jam 14.00-16.00 - 10 orang]");
+    }
+
+    async function cekJadwalInterviewIntent(agent) {
+      const { number } = result.parameters;
+
+      //Ambil dari DB
+      agent.add("Jadwal interview ID Pelamar" + number + "adalah" + "");
+    }
+
+    async function cekStatusLamaranIntent(agent) {
+      const { number } = result.parameters;
+
+      //Ambil dari DB
+      agent.add("Status lamaran dari ID Pelamar" + number + ": " + "");
+    }
+
+    async function cekGajiIntent(agent) {
+      //Ambil dari DB
+      agent.add("Berikut ini adalah rincian gaji Anda pada bulan yang diminta" + "");
+      agent.add("Apakah ada yang bisa dibantu lagi? ");
+    }
+
+    async function klaimIntent(agent) {
+      agent.add(new Suggestion("Klaim Asuransi Kesehatan"));
+      agent.add(new Suggestion("Klaim Biaya Perjalanan"));
+      agent.add(new Suggestion("Lainnya"));
+      //OCR
+      agent.add("Baiklah permintaan klaim anda sedang di proses.Boleh minta foto untuk klaim nya?");
+    }
+
+    async function klaimIntent(agent) {
+      //Ambil dari DB
+      agent.add("Baiklah permintaan klaim anda sedang di proses.Boleh minta foto untuk klaim nya?");
+    }
+
+    async function hitungPayrollBulananIntent(agent) {
+      //Ambil dari DB
+      /*CARD LIST PAYROLL BULANAN
+      @nama
+      @gaji 
+      */
+      agent.add("Apakah ada yang bisa dibantu lagi?");
+    }
+
+    async function hitungPayrollPeroranganIntent(agent) {
+      const { number } = result.parameters;
+      
+      //Ambil dari DB
+      /*CARD LIST PAYROLL PERORANGAN
+      header@nama
+      body  @gajipokok
+            @tunjangankesehatan
+            @uangmakan
+      footer@total
+      */
+      agent.add("Apakah ada yang bisa dibantu lagi?");
+    }
+
+    async function cekLowonganIntent(agent) {
+      /*
+      CARD LIST DAFTAR LOWONGAN 
+      @Jabatan/Posisi
+      @Deskripsi
+      @Lokasi
+      */
+      //Ambil dari DB
+      agent.add("Berikut ini adalah lowongan yang tersedia saat ini" + "");
+      agent.add("Apakah ada yang bisa dibantu lagi? ");
     }
 
     function formatDate(date) {
@@ -195,12 +304,21 @@ exports.dialogflowWebhook = functions.https.onRequest(
     intentMap.set("Ajukan Cuti Sakit - yes", konfirmasiCutiSakit);
     intentMap.set("Pengajuan Cuti Intent", pengajuanCutiIntent);
     intentMap.set("Ajukan Cuti Tahunan Intent", ajukanCutiTahunanIntent);
-    intentMap.set(
-      "Ajukan Cuti Tahunan Intent - yes",
-      konfirmasiPengajuanCutiTahunanIntent
-    );
+    intentMap.set("Ajukan Cuti Tahunan Intent - yes", konfirmasiPengajuanCutiTahunanIntent);
+    intentMap.set("Ajukan Cuti Tahunan Intent - no", batalPengajuanCutiTahunanIntent);
     intentMap.set("Cek Absensi Intent", cekAbsensiIntent);
     intentMap.set("Buat Meeting Intent", buatMeetingIntent);
+    intentMap.set("Buat Meeting-Formatted Intent", buatMeetingFormattedIntent);
+    intentMap.set("Buat Meeting-Formatted Intent - yes", konfirmasiBuatMeetingIntent);
+    intentMap.set("Buat Meeting-Formatted Intent - no", batalBuatMeetingIntent);
+    intentMap.set("Lihat Jadwal Meeting Intent", lihatJadwalMeetingIntent);
+    intentMap.set("Cek Jadwal Interview Intent", cekJadwalInterviewIntent);
+    intentMap.set("Cek Status Lamaran Intent", cekStatusLamaranIntent);
+    intentMap.set("Cek Gaji Intent", cekGajiIntent);
+    intentMap.set("Cek Lowongan Intent", cekLowonganIntent);
+    intentMap.set("Hitung Payroll Bulanan", hitungPayrollBulananIntent);
+    intentMap.set("Hitung Payroll Perorangan Intent", hitungPayrollPeroranganIntent);
+    intentMap.set("Klaim Intent", klaimIntent);
 
     agent.handleRequest(intentMap);
   }
